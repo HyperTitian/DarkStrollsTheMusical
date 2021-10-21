@@ -59,9 +59,6 @@ namespace DarkStrollsAPI.Controllers
 
             await dbContext.DisposeAsync();
 
-            //var returnValue = new JObject();
-            //returnValue.Add("Password", "s");
-
             return JsonConvert.SerializeObject(users);
         }
     }
