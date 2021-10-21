@@ -23,114 +23,112 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57549
+59071
 Successfully changed project path to: /Users/josh_reynolds/Documents/GitHub/DarkStrollsTheMusical/DarkStrolls
 /Users/josh_reynolds/Documents/GitHub/DarkStrollsTheMusical/DarkStrolls
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 131.49 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 65.33 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.24f1 (6667702a1e7c)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.1.24f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/josh_reynolds/Documents/GitHub/DarkStrollsTheMusical/DarkStrolls/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
-2021-10-21 08:05:03.476 Unity[55517:3504010] Color LCD preferred device: Intel(R) UHD Graphics 617 (low power)
-2021-10-21 08:05:03.476 Unity[55517:3504010] Metal devices available: 1
-2021-10-21 08:05:03.476 Unity[55517:3504010] 0: Intel(R) UHD Graphics 617 (low power)
-2021-10-21 08:05:03.476 Unity[55517:3504010] Using device Intel(R) UHD Graphics 617 (low power)
+2021-10-21 08:33:30.007 Unity[56694:3528496] Color LCD preferred device: Intel(R) UHD Graphics 617 (low power)
+2021-10-21 08:33:30.007 Unity[56694:3528496] Metal devices available: 1
+2021-10-21 08:33:30.007 Unity[56694:3528496] 0: Intel(R) UHD Graphics 617 (low power)
+2021-10-21 08:33:30.007 Unity[56694:3528496] Using device Intel(R) UHD Graphics 617 (low power)
 Initializing Metal device caps: Intel(R) UHD Graphics 617
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.1.24f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.1.24f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.1.24f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56517
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56694
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.1.24f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.1.24f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006303 seconds.
+Registered in 0.009628 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 98.69 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 238.20 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  5.760 seconds
+- Completed reload, in 16.298 seconds
 Domain Reload Profiling:
-	ReloadAssembly (5760ms)
-		BeginReloadAssembly (178ms)
+	ReloadAssembly (16298ms)
+		BeginReloadAssembly (184ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (761ms)
-			LoadAssemblies (180ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (294ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (3856ms)
+			LoadAssemblies (190ms)
+			RebuildTransferFunctionScriptingTraits (4ms)
+			SetupTypeCache (1715ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (57ms)
-			SetupLoadedEditorAssemblies (313ms)
+			RebuildScriptCaches (374ms)
+			SetupLoadedEditorAssemblies (1534ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (99ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (158ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
+				InitializePlatformSupportModulesInManaged (74ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (238ms)
+				BeforeProcessingInitializeOnLoad (40ms)
+				ProcessInitializeOnLoadAttributes (1006ms)
+				ProcessInitializeOnLoadMethodAttributes (175ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.018513 seconds.
+Registered in 0.013810 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/josh_reynolds/Documents/GitHub/DarkStrollsTheMusical/DarkStrolls/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/josh_reynolds/Documents/GitHub/DarkStrollsTheMusical/DarkStrolls/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.834 seconds
+- Completed reload, in  4.452 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1835ms)
-		BeginReloadAssembly (259ms)
+	ReloadAssembly (4453ms)
+		BeginReloadAssembly (752ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (16ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (62ms)
-		EndReloadAssembly (1482ms)
-			LoadAssemblies (187ms)
+			CreateAndSetChildDomain (122ms)
+		EndReloadAssembly (3388ms)
+			LoadAssemblies (197ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (553ms)
+			SetupTypeCache (1089ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (496ms)
+			RebuildScriptCaches (209ms)
+			SetupLoadedEditorAssemblies (1234ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (40ms)
+				SetLoadedEditorAssemblies (4ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (84ms)
-				ProcessInitializeOnLoadAttributes (392ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
+				BeforeProcessingInitializeOnLoad (239ms)
+				ProcessInitializeOnLoadAttributes (920ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2021.1.24f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.06 seconds
-Refreshing native plugins compatible for Editor in 6.52 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.10 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2952 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 215.2 MB.
-System memory in use after: 215.4 MB.
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.6 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3399.
-Total: 16.423528 ms (FindLiveObjects: 7.320820 ms CreateObjectMapping: 0.967405 ms MarkObjects: 8.023695 ms  DeleteObjects: 0.109327 ms)
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 463.
+Total: 6.295712 ms (FindLiveObjects: 0.107957 ms CreateObjectMapping: 0.007019 ms MarkObjects: 6.078889 ms  DeleteObjects: 0.099544 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -142,4 +140,38 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/MainMenuHandler.cs
+  artifactKey: Guid(3a16ebc2657354fe69bf4ed669140ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MainMenuHandler.cs using Guid(3a16ebc2657354fe69bf4ed669140ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed9946a0283e38c0b65e46e76ff2c178') in 1.122074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.147245 seconds.
+  path: Assets/Scenes/Main Game.unity
+  artifactKey: Guid(c5a05d3703edf004fa509eeb9c075941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main Game.unity using Guid(c5a05d3703edf004fa509eeb9c075941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d03101fce746d8ecec8d7b98b0fa7e4') in 0.101141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.655024 seconds.
+  path: Assets/Scenes/MainMenuScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenuScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88fa55b84309b9eda1b8c38a49ee42c9') in 0.003685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 95.222935 seconds.
+  path: Assets/CS/DSContext.cs
+  artifactKey: Guid(320934e7bd8c82f408ccdf8d9cbb527d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CS/DSContext.cs using Guid(320934e7bd8c82f408ccdf8d9cbb527d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39e6e65219f80344f21d786f439fa06f') in 0.011981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.137068 seconds.
+  path: Assets/CS/DSContext.cs
+  artifactKey: Guid(320934e7bd8c82f408ccdf8d9cbb527d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CS/DSContext.cs using Guid(320934e7bd8c82f408ccdf8d9cbb527d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '679108ecfb874a309cd6be796e1db862') in 0.005149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.366430 seconds.
+  path: Assets/CS/DSContext.cs
+  artifactKey: Guid(320934e7bd8c82f408ccdf8d9cbb527d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CS/DSContext.cs using Guid(320934e7bd8c82f408ccdf8d9cbb527d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9325a3d7a2bcfd698aa4113dd3415d0') in 0.002787 seconds 
