@@ -60,11 +60,7 @@ namespace DarkStrollsAPI.Controllers
 
             dbContext.Add(user);
             await dbContext.SaveChangesAsync();
-            user = await dbContext.Users.FirstAsync(x => x.Username == user.Username);
             await dbContext.DisposeAsync();
-
-            //var returnValue = new JObject();
-            //returnValue.Add("Password", "s");
 
             return JsonConvert.SerializeObject(user);
         }
