@@ -29,14 +29,7 @@ namespace DarkStrollsAPI.Controllers
         [HttpGet]
         public async Task<string> Get()
         {
-            var dbContext = new DarkDbContext();
-
-            bool exists = await dbContext.Users.AnyAsync(x => x.Username == "Bob");
-
-            //var returnValue = new JObject();
-            //returnValue.Add("Password", "s");
-
-            return $"Exists: {exists} Username: {"Bob"}";
+            return await PostAsync();
         }
 
         public async Task<string> PostAsync()
