@@ -1,3 +1,4 @@
+using DarkStrollsAPI.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -18,6 +19,8 @@ namespace DarkStrollsAPI
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
+            DarkDbContext.ConnectionString = configuration.GetConnectionString("DarkStrollsDatabase");
         }
 
         public IConfiguration Configuration { get; }
