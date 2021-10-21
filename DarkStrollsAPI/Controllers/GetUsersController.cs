@@ -16,12 +16,12 @@ namespace DarkStrollsAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class GetUsersController : ControllerBase
+    public class CreateUserController : ControllerBase
     {
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public GetUsersController(ILogger<WeatherForecastController> logger)
+        public CreateUserController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
         }
@@ -42,7 +42,7 @@ namespace DarkStrollsAPI.Controllers
         public async Task<string> PostAsync()
         {
             string body = await new StreamReader(HttpContext.Request.Body).ReadToEndAsync();
-            var request = JsonConvert.DeserializeObject<GetUsersRequest>(body);
+            var request = JsonConvert.DeserializeObject<CreateUserRequest>(body);
 
             if(request is null)
             {
@@ -52,24 +52,28 @@ namespace DarkStrollsAPI.Controllers
 
             var dbContext = new DarkDbContext();
 
-            var users = new List<User>();
+            bool exists = await dbContext.Users.AnyAsync(x => x.Username == request.Username);
 
-            if(request.UserIds != null)
+            if(exists)
             {
-                users.AddRange(await dbContext.Users.Where(x => request.UserIds.Contains(x.Id)).ToListAsync());
+                await dbContext.DisposeAsync();
+                return "User exists!";
             }
 
-            if(request.Usernames != null)
+            var user = new User()
             {
-                users.AddRange(await dbContext.Users.Where(x => request.Usernames.Contains(x.Username)).ToListAsync());
-            }
+                Username = request.Username
+            };
 
+            dbContext.Add(user);
+            await dbContext.SaveChangesAsync();
+            user = await dbContext.Users.FirstAsync(x => x.Username == user.Username);
             await dbContext.DisposeAsync();
 
             //var returnValue = new JObject();
             //returnValue.Add("Password", "s");
 
-            return JsonConvert.SerializeObject(users);
+            return JsonConvert.SerializeObject(user);
         }
     }
 }
