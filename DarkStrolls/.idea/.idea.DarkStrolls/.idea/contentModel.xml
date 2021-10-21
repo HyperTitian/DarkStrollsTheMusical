@@ -4,6 +4,10 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="CS" t="Include">
+          <e p="DeleteMe.cs" t="Include" />
+          <e p="DSContext.cs" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="MainMenuHandler.cs" t="Include" />
         </e>
