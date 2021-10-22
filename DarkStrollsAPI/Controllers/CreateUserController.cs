@@ -19,13 +19,6 @@ namespace DarkStrollsAPI.Controllers
     public class CreateUserController : ControllerBase
     {
 
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public CreateUserController(ILogger<WeatherForecastController> logger)
-        {
-            _logger = logger;
-        }
-
         [HttpGet]
         public async Task<string> Get()
         {

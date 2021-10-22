@@ -20,13 +20,6 @@ namespace DarkStrollsAPI.Controllers
     public class GetMessagesController : ControllerBase
     {
 
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public GetMessagesController(ILogger<WeatherForecastController> logger)
-        {
-            _logger = logger;
-        }
-
         [HttpGet]
         public async Task<string> Get()
         {
