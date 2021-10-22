@@ -8,6 +8,7 @@ using UnityEngine.Events;
 using UnityEngine.Networking;
 using Newtonsoft.Json;
 using System;
+using UnityEngine.SceneManagement;
 
 public class MainMenuHandler : MonoBehaviour
 {
@@ -94,6 +95,8 @@ public class MainMenuHandler : MonoBehaviour
 
             newUserEmail_Input.colors = colorBlock;
         }));
+
+        Invoke("SceneInvoke", 1f);
     }
     
     public void LoginUserAction()
@@ -145,12 +148,22 @@ public class MainMenuHandler : MonoBehaviour
 
             returningUserEmail_Input.colors = colorBlock;
         }));
-
+        
+        Invoke("SceneInvoke", 1f);
     }
 
     public void ReturnToMainMenu()
     {
         setActivePanel(mainMenuPanel);
+    }
+
+    public void SceneInvoke()
+    {
+        if (returningUserSuccess == true && returningUserEmail_Input.colors.normalColor == Color.green)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
+        if (newUserSuccess == true && newUserEmail_Input.colors.normalColor == Color.green)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     private void setActivePanel(GameObject panel)
