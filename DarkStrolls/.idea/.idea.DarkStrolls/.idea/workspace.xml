@@ -23,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/200b0aE.dag" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/200b0aE.dag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
@@ -36,6 +35,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -44,6 +44,8 @@
         <option value="$PROJECT_DIR$/Assets/CS/DSContext.cs" />
         <option value="$PROJECT_DIR$/Assets/CS/DSContext.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/GoBack.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -95,7 +97,8 @@
       <workItem from="1634824503239" duration="2321000" />
       <workItem from="1634835854521" duration="220000" />
       <workItem from="1634836933198" duration="256000" />
-      <workItem from="1634915863281" duration="920000" />
+      <workItem from="1634915863281" duration="1745000" />
+      <workItem from="1635177995788" duration="75000" />
     </task>
     <servers />
   </component>
