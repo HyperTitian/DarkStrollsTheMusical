@@ -22,10 +22,6 @@
     <list default="true" id="21bb956d-3095-47a3-9ca4-6d70170c4f30" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Bee/200b0aE.dag" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/200b0aE.dag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +33,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/NewUserHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -99,7 +95,7 @@
       <workItem from="1634835854521" duration="220000" />
       <workItem from="1634836933198" duration="256000" />
       <workItem from="1634915863281" duration="1745000" />
-      <workItem from="1635177995788" duration="903000" />
+      <workItem from="1635177995788" duration="1141000" />
     </task>
     <servers />
   </component>

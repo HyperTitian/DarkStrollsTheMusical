@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1911461267}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: NewUserHandler, Assembly-CSharp
         m_MethodName: CreateUserAction
         m_Mode: 1
@@ -1427,16 +1427,6 @@ MonoBehaviour:
   mainMenuPanel: {fileID: 575914179}
   newUserPanel: {fileID: 1911461263}
   returningUserPanel: {fileID: 1235996994}
-  newUserEmail_Input: {fileID: 2028672034}
-  newUserPassword_Input: {fileID: 882339198}
-  returningUserEmail_Input: {fileID: 1801917399}
-  returningUserPassword_Input: {fileID: 1979227802}
-  newUserEmail_Text: 
-  newUserPassword_Text: 
-  newUserSuccess: 0
-  returningUserEmail_Text: 
-  returningUserPassword_Text: 
-  returningUserSuccess: 0
 --- !u!114 &935162723
 MonoBehaviour:
   m_ObjectHideFlags: 0
