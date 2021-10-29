@@ -18,12 +18,14 @@
         <e p="Scripts" t="Include">
           <e p="GameManager.cs" t="Include" />
           <e p="GameState.cs" t="Include" />
+          <e p="GPS.cs" t="Include" />
           <e p="Main Menu" t="Include">
             <e p="LoginUserHandler.cs" t="Include" />
             <e p="MainMenuHandler.cs" t="Include" />
             <e p="NewUserHandler.cs" t="Include" />
             <e p="ShowPasswordToggle.cs" t="Include" />
           </e>
+          <e p="UpdateGPSText.cs" t="Include" />
         </e>
       </e>
       <e p="DarkStrolls.sln" t="IncludeFlat" />
