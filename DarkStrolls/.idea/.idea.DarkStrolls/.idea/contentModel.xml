@@ -12,6 +12,22 @@
             <e p="User.cs" t="Include" />
           </e>
         </e>
+        <e p="GoogleMaps" t="Include">
+          <e p="Plugins" t="Include">
+            <e p="Google.Maps.xml" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="BaseMapColor.shader" t="Include" />
+            <e p="BaseMapColorUnlit.shader" t="Include" />
+            <e p="BaseMapTextured.shader" t="Include" />
+            <e p="BaseMapTexturedUnlit.shader" t="Include" />
+            <e p="GoogleMapsShaderLib.cginc" t="Include" />
+            <e p="MuskStandard.shader" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="DeviceCountryProvider.cs" t="Include" />
+          </e>
+        </e>
         <e p="JsonDotNet" t="Include">
           <e p="link.xml" t="Include" />
         </e>

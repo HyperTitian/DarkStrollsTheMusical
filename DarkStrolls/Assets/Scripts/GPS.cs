@@ -11,7 +11,6 @@ public class GPS : MonoBehaviour
     public float latitude;
     public float longitude;
 
-    public Text debugText;
     
     private void Start()
     {
@@ -60,7 +59,6 @@ public class GPS : MonoBehaviour
         {
             latitude = Input.location.lastData.latitude;
             longitude = Input.location.lastData.longitude;
-            debugText.text = debugText.text + "R";
         }
     }
 }
