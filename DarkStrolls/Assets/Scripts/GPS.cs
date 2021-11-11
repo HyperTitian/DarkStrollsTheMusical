@@ -11,6 +11,8 @@ public class GPS : MonoBehaviour
     public float latitude;
     public float longitude;
 
+    public GameObject player;
+
     
     private void Start()
     {
@@ -52,13 +54,15 @@ public class GPS : MonoBehaviour
         longitude = Input.location.lastData.longitude;
         yield break;
     }
-
+    
     public void Update()
     {
         if (Input.location.status == LocationServiceStatus.Running)
         {
             latitude = Input.location.lastData.latitude;
             longitude = Input.location.lastData.longitude;
+            
+            //player.transform.position = new Vector3(latitude, 0, longitude);
         }
     }
 }

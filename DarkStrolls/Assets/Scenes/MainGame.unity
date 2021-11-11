@@ -909,7 +909,7 @@ GameObject:
   - component: {fileID: 984145290}
   - component: {fileID: 984145289}
   m_Layer: 0
-  m_Name: Person
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1131,6 +1131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   latitude: 0
   longitude: 0
+  player: {fileID: 984145288}
 --- !u!114 &1434983947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1384,7 +1385,7 @@ MonoBehaviour:
     Directory: Google.Maps
     MaxDiskBytes: 10485760
     DiskTimeoutSeconds: 0
-  CountryProvider: {fileID: 0}
+  CountryProvider: {fileID: 1434983948}
   LanguageCode: 
   MinBasemapSortingOrder: -32767
   MaxBasemapSortingOrder: -1
