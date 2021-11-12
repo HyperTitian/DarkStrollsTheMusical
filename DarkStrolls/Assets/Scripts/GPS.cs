@@ -11,7 +11,7 @@ public class GPS : MonoBehaviour
     public float latitude;
     public float longitude;
 
-    public GameObject player;
+    //public GameObject player;
 
     
     private void Start()

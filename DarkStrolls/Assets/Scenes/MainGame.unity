@@ -709,7 +709,8 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 400, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 984145292}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -986,11 +987,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984145288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 370}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 638465157}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1306049803
 GameObject:
@@ -1111,7 +1112,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434983943}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 365.49207, y: 205.8814, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1131,7 +1132,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   latitude: 0
   longitude: 0
-  player: {fileID: 984145288}
 --- !u!114 &1434983947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1247,6 +1247,8 @@ GameObject:
   - component: {fileID: 1614917859}
   - component: {fileID: 1614917858}
   - component: {fileID: 1614917860}
+  - component: {fileID: 1614917861}
+  - component: {fileID: 1614917862}
   m_Layer: 0
   m_Name: MapBase
   m_TagString: Untagged
@@ -1373,8 +1375,8 @@ MonoBehaviour:
   MapPreviewOptions:
     Enable: 0
     Location:
-      _Lat: 48.85837
-      _Lng: 2.294481000000019
+      _Lat: 47.11879
+      _Lng: -88.54424
     Size: 500
   MetadataOptions:
     Method: 1
@@ -1385,7 +1387,7 @@ MonoBehaviour:
     Directory: Google.Maps
     MaxDiskBytes: 10485760
     DiskTimeoutSeconds: 0
-  CountryProvider: {fileID: 1434983948}
+  CountryProvider: {fileID: 0}
   LanguageCode: 
   MinBasemapSortingOrder: -32767
   MaxBasemapSortingOrder: -1
@@ -1419,6 +1421,41 @@ MonoBehaviour:
   LatLng:
     _Lat: 47.1191
     _Lng: -88.54680000000002
+--- !u!114 &1614917861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614917857}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ae8c29baf994eb2944b08f03f61166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LatLng:
+    _Lat: 47.1191
+    _Lng: -88.54680000000002
+  mapsService: {fileID: 1614917858}
+--- !u!114 &1614917862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614917857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d3c60a68bb54c3ba1bef21b4492e9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseMapLoader: {fileID: 0}
+  Ground: {fileID: 0}
+  CameraMoveDistance: 100
+  CameraMoveAngle: 10
+  UnloadedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1809065857
 GameObject:
   m_ObjectHideFlags: 0

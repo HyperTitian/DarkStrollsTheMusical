@@ -107,12 +107,15 @@ namespace Google.Maps.Examples {
           targetCameraPosition, Time.deltaTime * 5);
 
       // Only move the map location if the device has moved more than 2 meters.
-      if (Vector3.Distance(Vector3.zero, currentWorldLocation) > 2) {
+      if (Vector3.Distance(Vector3.zero, currentWorldLocation) > 1) {
         MapsService.MoveFloatingOrigin(currentLocation, new[] { Camera.main.gameObject });
         MapsService.LoadMap(ExampleDefaults.DefaultBounds,
             ExampleDefaults.DefaultGameObjectOptions);
         PreviousLocation = currentLocation;
       }
+      
+      transform.rotation = Quaternion.Euler(0, Input.compass.trueHeading, 0);
+
     }
 
     private void GetPermissions() {

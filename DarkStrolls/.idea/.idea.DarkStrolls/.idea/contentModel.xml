@@ -227,6 +227,8 @@
             <e p="NewUserHandler.cs" t="Include" />
             <e p="ShowPasswordToggle.cs" t="Include" />
           </e>
+          <e p="MapMovement.cs" t="Include" />
+          <e p="MovePlayer.cs" t="Include" />
           <e p="UpdateGPSText.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
