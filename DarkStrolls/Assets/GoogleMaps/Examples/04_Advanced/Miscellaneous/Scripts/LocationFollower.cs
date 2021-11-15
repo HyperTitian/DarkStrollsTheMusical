@@ -114,7 +114,7 @@ namespace Google.Maps.Examples {
         PreviousLocation = currentLocation;
       }
       
-      transform.rotation = Quaternion.Euler(0, Input.compass.trueHeading, 0);
+      transform.rotation = Quaternion.Euler(0, -Input.compass.magneticHeading, 0);
 
     }
 

@@ -47,8 +47,7 @@ public class MainMenuHandler : MonoBehaviour
 
     public void LoadNextScene()
     {
-        //SceneManager.LoadScene("MainGame");
-        SceneManager.LoadScene("MapsServiceTest");
+        SceneManager.LoadScene("MainGame");
     }
 
     private void setActivePanel(GameObject panel)

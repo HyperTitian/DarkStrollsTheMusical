@@ -22,14 +22,18 @@
     <list default="true" id="21bb956d-3095-47a3-9ca4-6d70170c4f30" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/01_GettingStarted/Scripts/BasicExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/01_GettingStarted/Scripts/BasicExample.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapsServiceTest.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapsServiceTest.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GPS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GPS.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenuHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenuHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovePlayer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovePlayer.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +47,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMaps/Examples/02_Fundamentals/Scripts/UI/Labeller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/LoginUserHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMaps/Examples/01_GettingStarted/Scripts/BasicExample.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MovePlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenuHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/NewUserHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -66,12 +69,12 @@
         <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/ShowPasswordToggle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UpdateGPSText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GPS.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MapMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/GoogleMaps/Examples/01_GettingStarted/Scripts/BasicExample.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MovePlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenuHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GPS.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenuHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MovePlayer.cs" />
       </list>
     </option>
   </component>
@@ -128,7 +131,7 @@
       <workItem from="1635352031013" duration="1148000" />
       <workItem from="1635520092846" duration="6395000" />
       <workItem from="1635956907114" duration="1087000" />
-      <workItem from="1636664669771" duration="9673000" />
+      <workItem from="1636664669771" duration="11842000" />
     </task>
     <servers />
   </component>
