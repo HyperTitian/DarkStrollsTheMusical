@@ -48,6 +48,7 @@ public class NewUserHandler : MonoBehaviour
         // Create the request and convert it to JSON.
         var userRequest = new CreateUserRequest();
         userRequest.Username = username;
+        userRequest.Password = password;
         string requestBody = JsonConvert.SerializeObject(userRequest);
 
         // Create the API connection and start it.

@@ -60,5 +60,10 @@ public class MainMenuHandler : MonoBehaviour
         activePanel = panel;
         activePanel.SetActive(true);
     }
+
+    public void ByPassButton()
+    {
+        SceneManager.LoadScene("MainGame");
+    }
     
 }

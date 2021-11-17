@@ -104,17 +104,18 @@ namespace Google.Maps.Examples {
       Vector3 targetCameraPosition = new Vector3(currentWorldLocation.x,
           Camera.main.transform.position.y, currentWorldLocation.z);
       Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position,
-          targetCameraPosition, Time.deltaTime * 5);
+          targetCameraPosition, Time.deltaTime);
 
       // Only move the map location if the device has moved more than 2 meters.
-      if (Vector3.Distance(Vector3.zero, currentWorldLocation) > 1) {
+      if (Vector3.Distance(Vector3.zero, currentWorldLocation) > 2) {
         MapsService.MoveFloatingOrigin(currentLocation, new[] { Camera.main.gameObject });
         MapsService.LoadMap(ExampleDefaults.DefaultBounds,
             ExampleDefaults.DefaultGameObjectOptions);
         PreviousLocation = currentLocation;
       }
       
-      transform.rotation = Quaternion.Euler(0, -Input.compass.magneticHeading, 0);
+      //transform.rotation = Quaternion.Euler(0, -Input.compass.magneticHeading, 0);
+      Camera.main.transform.rotation = Quaternion.Euler(90, Input.compass.trueHeading, 0);
 
     }
 

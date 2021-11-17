@@ -39,8 +39,10 @@ public class LoginUserHandler : MonoBehaviour
         }
 
         // Create the request and convert it to JSON.
-        var userRequest = new GetUsers();
-        userRequest.Usernames = new string[] { username };
+        var userRequest = new LoginRequest();
+        userRequest.Username = username;
+        userRequest.Password = password;
+        
         string requestBody = JsonConvert.SerializeObject(userRequest);
 
         // Create the API connection and start it.
@@ -51,9 +53,9 @@ public class LoginUserHandler : MonoBehaviour
             var newUserSuccess = false;
             try
             {
-                var response = JsonConvert.DeserializeObject<User[]>(rawBody);
+                var response = JsonConvert.DeserializeObject<User>(rawBody);
 
-                if (response is null || response.Length == 0 || response[0].Username is null)
+                if (response is null || response.Username is null)
                 {
                     ErrorText.text = "Failed to login!";
                     newUserSuccess = false;
@@ -61,7 +63,7 @@ public class LoginUserHandler : MonoBehaviour
                 else
                 {
                     newUserSuccess = true;
-                    userData = response[0];
+                    userData = response;
                 }
             }
             catch (JsonReaderException)

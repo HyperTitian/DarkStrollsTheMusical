@@ -9,6 +9,7 @@
           <e p="Data" t="Include">
             <e p="CreateUserRequest.cs" t="Include" />
             <e p="GetUsers.cs" t="Include" />
+            <e p="LoginRequest.cs" t="Include" />
             <e p="User.cs" t="Include" />
           </e>
         </e>
