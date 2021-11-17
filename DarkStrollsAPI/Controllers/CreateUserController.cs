@@ -11,6 +11,7 @@ using System.IO;
 using DarkStrollsAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using DarkStrollsAPI.Data.Requests;
+using DarkStrollsAPI.Security;
 
 namespace DarkStrollsAPI.Controllers
 {
@@ -45,7 +46,7 @@ namespace DarkStrollsAPI.Controllers
             var request = JsonConvert.DeserializeObject<CreateUserRequest>(body);
 
             // If the request is null, return an error.
-            if(request is null)
+            if(request is null || request.Password is null)
             {
                 return "Malformed request!";
             }
@@ -63,16 +64,29 @@ namespace DarkStrollsAPI.Controllers
                 return "User exists!";
             }
 
+            AuthenticationChecker passwords = new AuthenticationChecker();
+
+            if(!passwords.PasswordPassesRules(request.Password))
+            {
+                await dbContext.DisposeAsync();
+                return "Password doesn't meet rules!";
+            }
+
             // Create the new user.
             var user = new User()
             {
-                Username = request.Username
+                Username = request.Username,
+                
             };
+
+            passwords.SetPassword(user, request.Password);
             
             // Add the user to the context, save changes, and dispose.
             dbContext.Add(user);
             await dbContext.SaveChangesAsync();
             await dbContext.DisposeAsync();
+
+            user.SaltHash = null;
 
             // Return the new user as a JSON object.
             return JsonConvert.SerializeObject(user);

@@ -14,5 +14,7 @@ namespace DarkStrollsAPI.Data.Requests
         /// Username of the user to be created.
         /// </summary>
         public string Username { get; set; } = "";
+
+        public string? Password { get; set; }
     }
 }

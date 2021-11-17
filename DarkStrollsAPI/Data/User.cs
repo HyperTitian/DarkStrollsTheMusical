@@ -34,7 +34,7 @@ namespace DarkStrollsAPI.Data
         /// <summary>
         /// Password hash for the user.
         /// </summary>
-        [Column("salthash", TypeName = "BINARY(48)")]
+        [Column("saltbits", TypeName = "BINARY(48)")]
         public byte[]? SaltHash { get; set; }
 
         /// <summary>
