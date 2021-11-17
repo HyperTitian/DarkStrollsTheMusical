@@ -71,6 +71,14 @@ namespace DarkStrollsAPI.Controllers
                 messageIds.UnionWith(await dbContext.Messages.Where(x => userIds.Contains(x.UserId)).Select(x => x.Id).ToListAsync());
             }
 
+            if(request.Longitude != null && request.Latitude != null)
+            {
+                messageIds.UnionWith(await dbContext.Messages.Where(x => x.Longitude < request.Longitude + .001)
+                                                             .Where(x => x.Longitude > request.Longitude - .001)
+                                                             .Where(x => x.Latitude < request.Latitude + .001)
+                                                             .Where(x => x.Latitude > request.Latitude - .001).Select(x => x.Id).ToListAsync());
+            }
+
             // Get message ids from the listed message ids
             if(request.MessageIds != null)
             {

@@ -91,6 +91,15 @@ namespace DarkStrollsAPI.Controllers
                 message.UserId = user.Id;
             }
 
+            if(request.Latitude is null || request.Longitude is null)
+            {
+                await dbContext.DisposeAsync();
+                return "You must include longitude and latitude!";
+            }
+
+            message.Longitude = request.Longitude;
+            message.Latitude = request.Latitude;
+
             // Add the message to the context, save, and dispose.
             dbContext.Add(message);
             await dbContext.SaveChangesAsync();

@@ -24,5 +24,15 @@ namespace DarkStrollsAPI.Data.Requests
         /// Text to store in the message.
         /// </summary>
         public string Text = "";
+
+        /// <summary>
+        /// Longitude of the message.
+        /// </summary>
+        public double? Longitude { get; set; }
+
+        /// <summary>
+        /// Latitude of the message.
+        /// </summary>
+        public double? Latitude { get; set; }
     }
 }

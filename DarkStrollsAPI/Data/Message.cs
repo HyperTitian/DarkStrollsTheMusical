@@ -30,6 +30,18 @@ namespace DarkStrollsAPI.Data
         /// </summary>
         [Column("text", TypeName = "nvarchar(255)")]
         public string Text { get; set; } = "";
+
+        /// <summary>
+        /// X Location of the message.
+        /// </summary>
+        [Column("locationx", TypeName = "DOUBLE")]
+        public double? Longitude { get; set; }
+
+        /// <summary>
+        /// Y Location of the message.
+        /// </summary>
+        [Column("locationy", TypeName = "DOUBLE")]
+        public double? Latitude { get; set; }
         
     }
 }

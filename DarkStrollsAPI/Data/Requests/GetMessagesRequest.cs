@@ -20,9 +20,9 @@ namespace DarkStrollsAPI.Data.Requests
         /// </summary>
         public int[]? UserIds { get; set; }
 
-        public double? LocationY { get; set; }
+        public double? Longitude { get; set; }
 
-        public double? LocationX { get; set; }
+        public double? Latitude { get; set; }
 
         /// <summary>
         /// Usernames of the creators of requested messages.
