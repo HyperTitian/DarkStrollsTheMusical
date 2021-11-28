@@ -40,10 +40,10 @@ namespace DarkStrollsAPI.Data
         /// <summary>
         /// The session id of the user.
         /// </summary>
-        [Column("sessionId", TypeName = "BINARY(32)")]
-        public byte[]? SessionId { get; set; }
+        //[Column("sessionId", TypeName = "BINARY(32)")]
+        //public byte[]? SessionId { get; set; }
 
-        [Column("sessionExpires", TypeName = "datetime2(7)")]
-        public DateTime? SessionExpires { get; set; }
+        //[Column("sessionExpires", TypeName = "datetime2(7)")]
+       // public DateTime? SessionExpires { get; set; }
     }
 }
