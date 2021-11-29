@@ -33,6 +33,11 @@ namespace DarkStrollsAPI.Models
         /// DbSet for users in the database.
         /// </summary>
         public DbSet<User> Users { get; set; } = null!;
+        
+        /// <summary>
+        /// DbSet for bonfires in the database.
+        /// </summary>
+        public DbSet<Bonfire> Bonfires { get; set; } = null!;
 
         /// <summary>
         /// Called when initializing this context.
@@ -43,6 +48,7 @@ namespace DarkStrollsAPI.Models
         {
             modelBuilder.Entity<Message>().ToTable("messages");
             modelBuilder.Entity<User>().ToTable("users");
+            modelBuilder.Entity<Bonfire>().ToTable("bonfires");
         }
 
         /// <summary>
