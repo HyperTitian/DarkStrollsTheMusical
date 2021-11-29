@@ -24,6 +24,8 @@ namespace DarkStrollsAPI.Data.Requests
 
         public double? Latitude { get; set; }
 
+        public double? Range { get; set; }
+
         /// <summary>
         /// Usernames of the creators of requested messages.
         /// </summary>

@@ -10,10 +10,10 @@ namespace DarkStrollsAPI.Data.Requests
     /// </summary>
     public class GetBonfiresRequest
     {
-        public float Longitude { get; set; }
+        public float? Longitude { get; set; }
 
-        public float Latitude { get; set; }
+        public float? Latitude { get; set; }
 
-        public float Range { get; set; }
+        public float? Range { get; set; }
     }
 }
