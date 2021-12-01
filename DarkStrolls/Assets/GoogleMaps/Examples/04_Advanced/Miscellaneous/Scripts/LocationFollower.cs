@@ -104,7 +104,7 @@ namespace Google.Maps.Examples {
       Vector3 targetCameraPosition = new Vector3(currentWorldLocation.x,
           Camera.main.transform.position.y, currentWorldLocation.z);
       Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position,
-          targetCameraPosition, Time.deltaTime);
+          targetCameraPosition, (Time.deltaTime / 6));
 
       // Only move the map location if the device has moved more than 2 meters.
       if (Vector3.Distance(Vector3.zero, currentWorldLocation) > 2) {
