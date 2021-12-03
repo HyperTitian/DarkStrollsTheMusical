@@ -7,9 +7,11 @@
         <e p="CS" t="Include">
           <e p="ApiConnection.cs" t="Include" />
           <e p="Data" t="Include">
+            <e p="CreateMessageRequest.cs" t="Include" />
             <e p="CreateUserRequest.cs" t="Include" />
             <e p="GetUsers.cs" t="Include" />
             <e p="LoginRequest.cs" t="Include" />
+            <e p="Message.cs" t="Include" />
             <e p="User.cs" t="Include" />
           </e>
         </e>
@@ -219,6 +221,7 @@
           <e p="link.xml" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="CreateMessageHandler.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="GameState.cs" t="Include" />
           <e p="GPS.cs" t="Include" />
@@ -229,6 +232,7 @@
             <e p="ShowPasswordToggle.cs" t="Include" />
           </e>
           <e p="MapMovement.cs" t="Include" />
+          <e p="SpawnMessage.cs" t="Include" />
           <e p="UpdateGPSText.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
