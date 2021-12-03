@@ -21,11 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="21bb956d-3095-47a3-9ca4-6d70170c4f30" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CS/Data/LoginRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CS/Data/LoginRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main Menu/LoginUserHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Main Menu/LoginUserHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +72,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/LoginUserHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/CS/Data/LoginRequest.cs" />
         <option value="$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -133,6 +132,7 @@
       <workItem from="1636664669771" duration="11842000" />
       <workItem from="1637168968230" duration="3082000" />
       <workItem from="1638380845335" duration="1594000" />
+      <workItem from="1638547808897" duration="973000" />
     </task>
     <servers />
   </component>
