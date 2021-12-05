@@ -46,7 +46,7 @@ public class LoginUserHandler : MonoBehaviour
 
         // Create the API connection and start it.
         var apiConnection = new ApiConnection();
-        StartCoroutine(apiConnection.PostRequest("getusers", requestBody, rawBody =>
+        StartCoroutine(apiConnection.PostRequest("login", requestBody, rawBody =>
         {
             // Parse whether we succeeded.
             var newUserSuccess = false;
