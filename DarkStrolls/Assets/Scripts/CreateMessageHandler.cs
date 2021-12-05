@@ -30,10 +30,9 @@ public class CreateMessageHandler : MonoBehaviour
         }
         
         // Create the request and convert it to JSON.
-        var userRequest = new CreateUserRequest();
         var messageRequest = new CreateMessageRequest();
-        messageRequest.Username = userRequest.Username;
-        // messageRequest.UserId = ""; // not yet implemented
+        messageRequest.Username = GameState.CurrentUser.Username;
+        messageRequest.UserId = GameState.CurrentUser.Id;
         messageRequest.Text = messageText;
         messageRequest.Latitude = GPS.Instance.latitude.ToString();
         messageRequest.Longitude = GPS.Instance.longitude.ToString();
@@ -81,7 +80,7 @@ public class CreateMessageHandler : MonoBehaviour
     }
     
     /// <summary>
-    /// Called when the user creation fails.
+    /// Called when the message creation fails.
     /// </summary>
     private void createMessageFailed()
     {
@@ -92,7 +91,7 @@ public class CreateMessageHandler : MonoBehaviour
     }
 
     /// <summary>
-    /// Called when the user creation succeeds.
+    /// Called when the message creation succeeds.
     /// </summary>
     private void createMessageSucceeded()
     {
