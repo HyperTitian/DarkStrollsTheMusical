@@ -10,7 +10,7 @@ public class CreateMessageRequest
     /// <summary>
     /// User ID of the user you would like to create the message.
     /// </summary>
-    public string UserId { get; set; }
+    public int UserId { get; set; }
     
     /// <summary>
     /// Username of the user you would like to create the message.
