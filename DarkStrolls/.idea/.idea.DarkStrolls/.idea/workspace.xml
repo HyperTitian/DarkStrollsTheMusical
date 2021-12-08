@@ -20,12 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21bb956d-3095-47a3-9ca4-6d70170c4f30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/CS/Data/Message.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CS/Data/Message.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CS/Data/GetMessagesRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CS/Data/GetMessagesRequest.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MessagePrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MessagePrefab.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,26 +39,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/GoogleMaps/Examples/02_Fundamentals/Scripts/UI/SearchByIdDialog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CS/Data/GetMessagesRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CS/Data/CreateMessageRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMaps/Examples/02_Fundamentals/Scripts/UI/Labeller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/LoginUserHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMaps/Examples/01_GettingStarted/Scripts/BasicExample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MessageRadiusChecker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenuHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CS/Data/Message.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/NewUserHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoogleMaps/Examples/02_Fundamentals/Scripts/Updaters/DynamicMapsUpdater.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CS/Data/LoginRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawnMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CS/Data/Message.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CS/Data/CreateUserRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CS/Data/User.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B098E64C-0675-4EB2-AE33-356775947A59/fe/87cec9b3/LocationService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CS/Data/GetUsers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CreateMessageHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UpdateGPSText.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GoogleMaps/Examples/02_Fundamentals/Scripts/Updaters/DynamicMapsUpdater.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GPS.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CS/Data/LoginRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/ShowPasswordToggle.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawnMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMaps/Examples/02_Fundamentals/Scripts/BaseMapLoader.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -77,14 +82,16 @@
         <option value="$PROJECT_DIR$/Assets/CS/Data/CreateUserRequest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/NewUserHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/MainMenuHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/LoginUserHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/CS/Data/LoginRequest.cs" />
-        <option value="$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnMessage.cs" />
         <option value="$PROJECT_DIR$/Assets/CS/Data/CreateMessage.cs" />
-        <option value="$PROJECT_DIR$/Assets/CS/Data/Message.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CreateMessageHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/CS/Data/Message.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MessageRadiusChecker.cs" />
+        <option value="$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/LoginUserHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/CS/Data/GetMessagesRequest.cs" />
       </list>
     </option>
   </component>
@@ -145,6 +152,7 @@
       <workItem from="1637168968230" duration="3082000" />
       <workItem from="1638380845335" duration="1594000" />
       <workItem from="1638547808897" duration="5320000" />
+      <workItem from="1638810480783" duration="4463000" />
     </task>
     <servers />
   </component>

@@ -9,6 +9,7 @@
           <e p="Data" t="Include">
             <e p="CreateMessageRequest.cs" t="Include" />
             <e p="CreateUserRequest.cs" t="Include" />
+            <e p="GetMessagesRequest.cs" t="Include" />
             <e p="GetUsers.cs" t="Include" />
             <e p="LoginRequest.cs" t="Include" />
             <e p="Message.cs" t="Include" />
@@ -232,6 +233,7 @@
             <e p="ShowPasswordToggle.cs" t="Include" />
           </e>
           <e p="MapMovement.cs" t="Include" />
+          <e p="MessageRadiusChecker.cs" t="Include" />
           <e p="SpawnMessage.cs" t="Include" />
           <e p="UpdateGPSText.cs" t="Include" />
         </e>
