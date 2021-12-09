@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 #if PLATFORM_ANDROID
 using UnityEngine.Android;
 #endif
 using Google.Maps.Coord;
 using Google.Maps.Examples.Shared;
+using Newtonsoft.Json;
 
 namespace Google.Maps.Examples {
   /// <summary>
@@ -106,6 +108,14 @@ namespace Google.Maps.Examples {
       Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position,
           targetCameraPosition, (Time.deltaTime)); // (Time.deltaTime / 6)
 
+      
+      var userRequest = new GetMessagesRequest();
+      userRequest.Latitude = GPS.Instance.latitude;
+      userRequest.Longitude = GPS.Instance.longitude;
+      string requestBody = JsonConvert.SerializeObject(userRequest);
+      
+      RetrieveMessages(requestBody);
+
       // Only move the map location if the device has moved more than 2 meters.
       if (Vector3.Distance(Vector3.zero, currentWorldLocation) > 2) {
         MapsService.MoveFloatingOrigin(currentLocation, new[] { Camera.main.gameObject });
@@ -143,5 +153,40 @@ namespace Google.Maps.Examples {
         }
         #endif
     }
+
+    private void RetrieveMessages(string requestBody)
+    {
+      GetMessagesRequest gmr = new GetMessagesRequest();
+      // Create the API connection and start it.
+      var apiConnection = new ApiConnection();
+      StartCoroutine(apiConnection.PostRequest("getmessages", requestBody, rawBody =>
+      {
+        // Parse whether we succeeded.
+        try
+        {
+          var response = JsonConvert.DeserializeObject<Message[]>(rawBody);
+
+          if (response != null)
+          {
+            GameState.MessageArray = response;
+            
+            // place new message at lat and long -- for each loop
+            
+            foreach (Message message in GameState.MessageArray)
+            {
+              if (Double.Parse(message.Latitude) < gmr.Range)
+              {
+                // message obj spawn in -- not saved into message array
+              }
+            }
+          }
+        }
+        catch (JsonReaderException)
+        {
+          // do nothing
+        }
+      }));
+    }
+    
   }
 }

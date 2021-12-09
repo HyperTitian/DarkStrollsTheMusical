@@ -20,15 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21bb956d-3095-47a3-9ca4-6d70170c4f30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/CS/Data/GetMessagesRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CS/Data/GetMessagesRequest.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DarkStrolls/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CS/Data/GetMessagesRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CS/Data/GetMessagesRequest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MessagePrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MessagePrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +59,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Menu/ShowPasswordToggle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMaps/Examples/02_Fundamentals/Scripts/BaseMapLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -88,10 +84,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CreateMessageHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/CS/Data/Message.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MessageRadiusChecker.cs" />
-        <option value="$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Menu/LoginUserHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/CS/Data/GetMessagesRequest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
+        <option value="$PROJECT_DIR$/Assets/GoogleMaps/Examples/04_Advanced/Miscellaneous/Scripts/LocationFollower.cs" />
       </list>
     </option>
   </component>
@@ -152,7 +149,7 @@
       <workItem from="1637168968230" duration="3082000" />
       <workItem from="1638380845335" duration="1594000" />
       <workItem from="1638547808897" duration="5320000" />
-      <workItem from="1638810480783" duration="4463000" />
+      <workItem from="1638810480783" duration="7937000" />
     </task>
     <servers />
   </component>
