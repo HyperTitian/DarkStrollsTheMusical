@@ -15,7 +15,7 @@ public class Message
     /// <summary>
     /// Username of the user.
     /// </summary>
-    public string Username { get; set; }
+    public string UserId { get; set; }
     
     /// <summary>
     /// Text in the message.
@@ -25,11 +25,11 @@ public class Message
     /// <summary>
     /// Longitude of the message.
     /// </summary>
-    public string Longitude { get; set; }
+    public double Longitude { get; set; }
     
     /// <summary>
     /// Latitude of the message.
     /// </summary>
-    public string Latitude { get; set; }
+    public double Latitude { get; set; }
     
 }

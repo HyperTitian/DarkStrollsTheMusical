@@ -25,10 +25,10 @@ public class CreateMessageRequest
     /// <summary>
     /// Longitude of the message location you would like to create the message at.
     /// </summary>
-    public string Longitude { get; set; }
+    public double Longitude { get; set; }
     
     /// <summary>
     /// Latitude of the message location you would like to create the message at.
     /// </summary>
-    public string Latitude { get; set; }
+    public double Latitude { get; set; }
 }

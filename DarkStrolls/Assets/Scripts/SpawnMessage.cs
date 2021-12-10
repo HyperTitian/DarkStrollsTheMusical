@@ -12,6 +12,6 @@ public class SpawnMessage : MonoBehaviour
     {
         Vector3 cameraPos = new Vector3(Camera.main.transform.position.x, 20, Camera.main.transform.position.z);
         
-        Instantiate(messagePrefab, cameraPos, Quaternion.identity);
+        GameObject x = Instantiate(messagePrefab, cameraPos, Quaternion.identity);
     }
 }

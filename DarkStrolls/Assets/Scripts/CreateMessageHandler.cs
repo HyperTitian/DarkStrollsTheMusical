@@ -16,6 +16,8 @@ public class CreateMessageHandler : MonoBehaviour
     public GameObject gameManager;
 
     // Variable to store user's data once it is retrieved.
+    private GameObject MessageController;
+
     private Message messageData;
 
     public void CreateMessageAction()
@@ -34,8 +36,8 @@ public class CreateMessageHandler : MonoBehaviour
         messageRequest.Username = GameState.CurrentUser.Username;
         messageRequest.UserId = GameState.CurrentUser.Id;
         messageRequest.Text = messageText;
-        messageRequest.Latitude = GPS.Instance.latitude.ToString();
-        messageRequest.Longitude = GPS.Instance.longitude.ToString();
+        messageRequest.Latitude = GPS.Instance.latitude;
+        messageRequest.Longitude = GPS.Instance.longitude;
         
         string requestBody = JsonConvert.SerializeObject(messageRequest);
         
@@ -100,6 +102,10 @@ public class CreateMessageHandler : MonoBehaviour
         colorBlock.normalColor = Color.green;
         message.colors = colorBlock;
         gameManager.GetComponent<GameManager>().SubmitMessage();
-        gameManager.GetComponent<SpawnMessage>().SpawnMessageAtPlace();
+        //gameManager.GetComponent<SpawnMessage>().SpawnMessageAtPlace();
+        if(GameState.CurrentMessage is null)
+        {
+            GameState.CurrentMessage = MessageController.GetComponent<MessageBehavior>().CreateMessage(new Vector3(Camera.main.transform.position.x, 20, Camera.main.transform.position.z), messageData.Text);
+        }
     }
 }

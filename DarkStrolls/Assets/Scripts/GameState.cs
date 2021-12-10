@@ -6,5 +6,9 @@ public class GameState
 {
     public static User CurrentUser { get; set; }
     
-    public static Message[] MessageArray { get; set; }
+    public static GameObject[] MessageObjects { get; set; }
+
+    public static GameObject CurrentMessage { get; set; }
+
+    public static Bonfire[] BonfireArray { get; set; }
 }

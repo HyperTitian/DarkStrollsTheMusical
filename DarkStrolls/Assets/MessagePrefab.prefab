@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2527499660820832241}
   - component: {fileID: 5105526031706266080}
   - component: {fileID: 2281998574458128207}
+  - component: {fileID: -7662276103388520771}
   m_Layer: 0
   m_Name: MessagePrefab
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5071402336099450983}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 118362895189657662}
   m_Father: {fileID: 0}
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ebfb09f1fc6f74cd78d5867871502f40, type: 2}
+  - {fileID: 2100000, guid: 54b2061e70f6181498a2b2ec8ae029fe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,6 +98,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-7662276103388520771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5071402336099450983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0108776dc4e18438697f3f331e31b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReadMessagesMenu: {fileID: 0}
+  Message: Cheese
+  MessagePrefab: {fileID: 0}
 --- !u!1 &8312908701010897103
 GameObject:
   m_ObjectHideFlags: 0
