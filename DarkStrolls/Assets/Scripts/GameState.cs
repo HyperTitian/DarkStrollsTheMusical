@@ -10,5 +10,5 @@ public class GameState
 
     public static GameObject CurrentMessage { get; set; }
 
-    public static Bonfire[] BonfireArray { get; set; }
+    public static GameObject[] BonfireObjects { get; set; }
 }

@@ -28,7 +28,7 @@ namespace Google.Maps.Examples
 #endif
 
         public GameObject messageBlueprint;
-
+        public GameObject bonfireHandler;
 
         /// <summary>
         /// The maps service.
@@ -41,6 +41,7 @@ namespace Google.Maps.Examples
         private LatLng PreviousLocation;
 
         private DateTime lastUpdate = DateTime.Now;
+
 
         /// <summary>Start following player's real-world location.</summary>
         private void Start()
@@ -141,6 +142,7 @@ namespace Google.Maps.Examples
                 PreviousLocation = currentLocation;
                 
                 RetrieveMessages(GPS.Instance.longitude, GPS.Instance.latitude);
+                RetrieveBonfires(GPS.Instance.longitude, GPS.Instance.latitude);
 
             }
 
@@ -238,5 +240,59 @@ namespace Google.Maps.Examples
             }));
         }
 
+
+        private void RetrieveBonfires(double longitude, double latitude)
+        {
+            var userRequest = new GetMessagesRequest();
+            userRequest.Latitude = latitude;
+            userRequest.Longitude = longitude;
+            userRequest.Range = 0.024;
+            string requestBody = JsonConvert.SerializeObject(userRequest);
+            // Create the API connection and start it.
+            var apiConnection = new ApiConnection();
+            StartCoroutine(apiConnection.PostRequest("getbonfires", requestBody, rawBody =>
+            {
+                // Parse whether we succeeded.
+                try
+                {
+                    var response = JsonConvert.DeserializeObject<Bonfire[]>(rawBody);
+                    if (response != null)
+                    {
+                        GameObject[] stuff = GameState.BonfireObjects;
+                        GameState.BonfireObjects = null;
+                        if (stuff != null)
+                        {
+                            for (int i = 0; i < stuff.Length; i++)
+                            {
+                                Destroy(stuff[i]);
+                                stuff[i] = null;
+                            }
+                        }
+                        var x = new GameObject[response.Length];
+
+
+                        // place new message at lat and long -- for each loop
+
+                        for (int i = 0; i < response.Length; i++)
+                        {
+                            var fire = response[i];
+                            LatLng coords = new LatLng(fire.Latitude, fire.Longitude);
+                            Vector3 worldCoords = MapsService.Projection.FromLatLngToVector3(coords);
+                            x[i] = bonfireHandler.GetComponent<BonfireBehavior>().CreateBonfire(worldCoords, fire.Name);
+                            Destroy(x[i], 12);
+                        }
+                        GameState.MessageObjects = x;
+                    }
+                    else
+                    {
+
+                    }
+                }
+                catch (JsonReaderException)
+                {
+                    // do nothing
+                }
+            }));
+        }
     }
 }
